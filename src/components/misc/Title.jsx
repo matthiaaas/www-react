@@ -6,10 +6,10 @@ class Title extends Component {
   render() {
     return (
       <Fragment>
-        <h4>{this.props.subline}</h4>
-        <Headline url={this.props.url} large={this.props.large}>{this.props.headline}</Headline>
+        <h4 data-aos="fade-up">{this.props.subline}</h4>
+        <Headline data-aos="fade-up" data-aos-delay="50" url={this.props.url} large={this.props.large}>{this.props.headline}</Headline>
         { this.props.content &&
-          <p className="text">
+          <p className="text" data-aos="fade-up" data-aos-delay="100">
             {this.props.content}
           </p>
         }

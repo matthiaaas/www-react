@@ -20,7 +20,7 @@ class Contact extends Component {
               content={
                 <Fragment>
                   <Link url={linksData.email}>hi@matthias.works</Link>
-                  -
+                  &#x20;-&#x20;
                   <Link url={linksData.twitter}>@teaxofficial</Link>
                 </Fragment>
               }

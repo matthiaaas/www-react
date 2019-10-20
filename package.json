@@ -1,12 +1,15 @@
 {
   "name": "web-react",
-  "homepage": "https://space.matthias.works",
+  "homepage": "https://space.matthias.works/sites/private-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "is-url-external": "^1.0.3",
     "node-sass": "^4.12.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-feather": "^2.0.3",
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"

@@ -66,13 +66,13 @@ $aos-easing: (
   }
 }
 
-// Animations variables
+// aoss variables
 $aos-distance: 35px !default;
 
 @media screen {
   html:not(.no-js) {
     /**
-    * Fade animations:
+    * Fade aoss:
     * fade
     * fade-up, fade-down, fade-left, fade-right
     * fade-up-right, fade-up-left, fade-down-right, fade-down-left
@@ -124,7 +124,7 @@ $aos-distance: 35px !default;
 
 
     /**
-    * Zoom animations:
+    * Zoom aoss:
     * zoom-in, zoom-in-up, zoom-in-down, zoom-in-left, zoom-in-right
     * zoom-out, zoom-out-up, zoom-out-down, zoom-out-left, zoom-out-right
     */
@@ -183,7 +183,7 @@ $aos-distance: 35px !default;
 
 
     /**
-    * Slide animations
+    * Slide aoss
     */
 
     [data-aos^='slide'][data-aos^='slide'] {

@@ -1,10 +1,12 @@
 import React, { Component, Fragment } from "react";
 
+import Link from "./Link";
+
 class Button extends Component {
   render() {
     return (
       <Fragment>
-        <a className="btn" href={this.props.url}>{this.props.children}</a>
+        <Link className="btn" url={this.props.url}>{this.props.children}</Link>
       </Fragment>
     );
   }

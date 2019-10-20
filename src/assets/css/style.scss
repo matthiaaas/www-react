@@ -178,6 +178,7 @@ p {
 
 html,
 body {
+  scroll-behavior: smooth;
   background: $light;
 }
 
@@ -238,6 +239,7 @@ nav {
           }
 
           &:hover {
+            transform: translateX(6px);
             color: $dark;
           }
 
@@ -249,20 +251,19 @@ nav {
     }
 
     .mobile {
+      cursor: pointer;
       color: $dark;
       $size: 28px;
       width: $size;
       height: $size;
       display: none;
 
-      &:hover {
-        color: $black;
+      @media screen and (max-width: $m2) {
+        display: block;
       }
 
-      &.m-open {
-        @media screen and (max-width: $m2) {
-          display: block;
-        }
+      &:hover {
+        color: $black;
       }
     }
   }

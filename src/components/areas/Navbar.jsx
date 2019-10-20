@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 
+import { createBrowserHistory } from "history";
+
 import Container from "../layout/Container";
 import Content from "../layout/Content";
 import Flex from "../layout/Flex";
 
+import List, { ListItem } from "../misc/List";
+import Link from "../misc/Link";
+
+import { Menu, X } from "react-feather";
+
 const menuItems = [
-  { title: "Home", link: "/#hero" },
+  { title: "Home", link: "/#top" },
   { title: "About", link: "/#about" },
   { title: "Projects", link: "/#projects" },
   { title: "Contact", link: "/#contact" }
@@ -33,12 +40,15 @@ class Navbar extends Component {
 
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = (menuItem) => {
+  handleClick(menuItem) {
     this.setState({
       active: menuItem.title
     });
+
+    this.closeNav();
   }
 
   openNav() {
@@ -48,9 +58,11 @@ class Navbar extends Component {
   }
 
   closeNav() {
-    this.setState({
-      navOpened: this.state.navOpened ? false: true
-    });
+    if (this.state.navOpened) {
+      this.setState({
+        navOpened: false
+      });
+    }
   }
 
   render() {
@@ -62,21 +74,21 @@ class Navbar extends Component {
         <Container>
           <Content>
             <Flex aligncenter spacebetween>
-              { !this.state.navOpened && <i className="mobile m-open" data-feather="menu" onClick={this.openNav}></i> }
-              { this.state.navOpened && <i className="mobile m-close" data-feather="x" onClick={this.closeNav}></i> }
-              <ul className="navigation" style={this.state.navOpened ? this.navStyle.opened: {}}>
+              { !this.state.navOpened && <Menu className="mobile m-open" onClick={this.openNav} /> }
+              { this.state.navOpened && <X className="mobile m-close" onClick={this.closeNav} /> }
+              <List className="navigation" style={this.state.navOpened ? this.navStyle.opened : {}}>
                 { menuItems.map(menuItem => (
-                  <li>
-                    <a
-                      href={menuItem.link}
+                  <ListItem>
+                    <Link
+                      url={menuItem.link}
                       className={this.state.active === menuItem.title ? activeElementClass : {}}
-                      onClick={this.handleClick.bind(this, menuItem)}
+                      onClick={this.handleClick}
                     >
                       {menuItem.title}
-                    </a>
-                  </li>
+                    </Link>
+                  </ListItem>
                 ))}
-              </ul>
+              </List>
             </Flex>
           </Content>
         </Container>
