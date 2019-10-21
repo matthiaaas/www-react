@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 
 import "../../assets/css/pages/projectpage.scss";
 
@@ -10,6 +10,12 @@ import Contact from "../../components/areas/Contact";
 import projectsData from "../../data/projects.js";
 
 class ProjectPage extends Component {
+  componentDidMount() {
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 2);
+  }
+
   render() {
     const currProject = projectsData[this.props.match.params.slug];
 

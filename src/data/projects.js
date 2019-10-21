@@ -24,7 +24,7 @@ export default {
     title: "Recipe App",
     client: "none",
     size: "large",
-    url: "/project/noeltner",
+    url: "/project/recipe",
     intro: "none",
     image: {
       preview: {
@@ -38,7 +38,7 @@ export default {
     title: "FTP Client",
     client: "none",
     size: "large",
-    url: "/project/noeltner",
+    url: "/project/ftpclient",
     intro: "Announcing a new era of transfering files through the web",
     image: {
       preview: {
@@ -52,7 +52,7 @@ export default {
     title: "Doctor Landing page",
     client: "none",
     size: "small",
-    url: "/project/noeltner",
+    url: "/project/doctor",
     intro: "Announcing a new era of transfering files through the web",
     image: {
       preview: {

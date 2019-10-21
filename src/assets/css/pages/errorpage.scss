@@ -1,0 +1,16 @@
+@import "../includes/colors";
+
+main#error {
+  header {
+    padding: 150px 0;
+    background: $white;
+
+    h1 {
+      max-width: 500px;
+    }
+
+    .btn {
+      margin-top: 25px;
+    }
+  }
+}

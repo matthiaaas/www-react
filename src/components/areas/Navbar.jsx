@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { createBrowserHistory } from "history";
+import { createBrowserHistory } from "history";
 
 import Container from "../layout/Container";
 import Content from "../layout/Content";
@@ -11,6 +11,8 @@ import Link from "../misc/Link";
 
 import { Menu, X } from "react-feather";
 
+import settingsData from "../../data/settings.js";
+
 const menuItems = [
   { title: "Home", link: "/#top" },
   { title: "About", link: "/#about" },
@@ -19,12 +21,14 @@ const menuItems = [
 ];
 
 class Navbar extends Component {
+  history = createBrowserHistory();
+
   constructor() {
     super();
 
     this.state = {
       navOpened: false,
-      active: menuItems[0].title
+      active: window.location.pathname === settingsData.basename ? menuItems[0].title : ""
     }
 
     this.navStyle = {
@@ -40,7 +44,6 @@ class Navbar extends Component {
 
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(menuItem) {
@@ -65,8 +68,17 @@ class Navbar extends Component {
     }
   }
 
-  render() {
+  componentDidMount() {
+    this.unlisten = this.history.listen(({pathname}) => {
+      console.log("LISTENED")
+    });
+  }
 
+  componentWillUnmount() {
+    this.unlisten();
+  }
+
+  render() {
     const activeElementClass = "active";
 
     return (
@@ -82,7 +94,7 @@ class Navbar extends Component {
                     <Link
                       url={menuItem.link}
                       className={this.state.active === menuItem.title ? activeElementClass : {}}
-                      onClick={this.handleClick}
+                      onClick={this.handleClick.bind(this, menuItem)}
                     >
                       {menuItem.title}
                     </Link>
