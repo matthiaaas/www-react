@@ -1,12 +1,16 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import AOS from "aos";
 
-import "./assets/css/style.scss";
+import LandingPage from "./pages/landing/LandingPage";
+import ProjectPage from "./pages/project/ProjectPage";
+import PageNotFound from "./pages/error/PageNotFound";
 
-import Routes from "./components/Routes";
-import Navbar from "./components/areas/Navbar";
-import Footer from "./components/areas/Footer";
+import projectsData from "./data/projects.js";
+import settingsData from "./data/settings.js";
+
+import "./assets/css/style.scss";
 
 class App extends Component {
   componentDidMount() {
@@ -17,11 +21,13 @@ class App extends Component {
 
   render() {
     return (
-      <Fragment>
-        <Navbar></Navbar>
-        <Routes></Routes>
-        <Footer></Footer>
-      </Fragment>
+      <BrowserRouter basename={settingsData.basename}>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path={`/project/:slug(${Object.keys(projectsData).join("|")})`} component={ProjectPage} />
+          <Route component={PageNotFound} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

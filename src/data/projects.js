@@ -5,8 +5,11 @@ import Noeltner from "../pages/projects/Noeltner";
 export default {
   noeltner: {
     name: "noeltner",
-    title: "Goldschmiede Nöltner",
+    title: "Goldschmiede Karl Nöltner",
     client: "Goldschmiede Nöltner",
+    skills: [
+      "UI/UX", "Development"
+    ],
     size: "medium",
     url: "/project/noeltner",
     intro: "Die Goldschmiede Nöltner sagt der Schmuckindustrie den Kampf an.",
@@ -23,6 +26,9 @@ export default {
     name: "recipe",
     title: "Recipe App",
     client: "none",
+    skills: [
+      "UI/UX"
+    ],
     size: "large",
     url: "/project/recipe",
     intro: "none",
@@ -37,6 +43,9 @@ export default {
     name: "ftpclient",
     title: "FTP Client",
     client: "none",
+    skills: [
+      "UI/UX"
+    ],
     size: "large",
     url: "/project/ftpclient",
     intro: "Announcing a new era of transfering files through the web",
@@ -47,16 +56,19 @@ export default {
       }
     },
   },
-  doctor: {
-    name: "doctor",
-    title: "Doctor Landing page",
-    client: "none",
+  pizziamo: {
+    name: "pizziamo",
+    title: "Pizziamo",
+    client: "Pizziamo Bühl",
+    skills: [
+      "UI/UX", "Development"
+    ],
     size: "small",
-    url: "/project/doctor",
-    intro: "Announcing a new era of transfering files through the web",
+    url: "/project/pizziamo",
+    intro: "Weil vierzig Zentimeter Durchmesser ausreichen",
     image: {
       preview: {
-        src: "https://cdn.dribbble.com/users/2049851/screenshots/6851492/web_2x.png",
+        src: "https://cdn.dribbble.com/users/2049851/screenshots/8071650/media/3a938ceb66985511792546321fb9fa4f.png",
         alt: "preview"
       }
     }

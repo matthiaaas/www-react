@@ -6,6 +6,7 @@ import Flex, { Con } from "../../components/layout/Flex";
 
 import List, { ListItem } from "../../components/misc/List";
 
+import projectsData from "../../data/projects.js";
 import linksData from "../../data/links.js";
 
 class Footer extends Component {
@@ -41,8 +42,8 @@ class Footer extends Component {
               </List>
               <List className="con con1">
                 <h3>Projekte</h3>
-                <ListItem url="/project/noeltner">Goldschmiede Nöltner</ListItem>
-                <ListItem url="/project/pizziamo">Pizziamo</ListItem>
+                <ListItem url={projectsData.noeltner.url}>Goldschmiede Nöltner</ListItem>
+                <ListItem url={projectsData.pizziamo.url}>Pizziamo</ListItem>
               </List>
             </Flex>
             <div className="bar">

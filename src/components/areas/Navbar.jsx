@@ -14,10 +14,10 @@ import { Menu, X } from "react-feather";
 import settingsData from "../../data/settings.js";
 
 const menuItems = [
-  { title: "Home", link: "/#top" },
-  { title: "About", link: "/#about" },
-  { title: "Projects", link: "/#projects" },
-  { title: "Contact", link: "/#contact" }
+  { title: "Home", link: "/" },
+  { title: "About", link: settingsData.basename+"#about" },
+  { title: "Projects", link: settingsData.basename+"#projects" },
+  { title: "Contact", link: settingsData.basename+"#contact" }
 ];
 
 class Navbar extends Component {
@@ -89,17 +89,20 @@ class Navbar extends Component {
               { !this.state.navOpened && <Menu className="mobile m-open" onClick={this.openNav} /> }
               { this.state.navOpened && <X className="mobile m-close" onClick={this.closeNav} /> }
               <List className="navigation" style={this.state.navOpened ? this.navStyle.opened : {}}>
-                { menuItems.map(menuItem => (
-                  <ListItem>
-                    <Link
-                      url={menuItem.link}
-                      className={this.state.active === menuItem.title ? activeElementClass : {}}
-                      onClick={this.handleClick.bind(this, menuItem)}
-                    >
-                      {menuItem.title}
-                    </Link>
-                  </ListItem>
-                ))}
+                { menuItems.map((menuItem, index) => {
+                  return (
+                    <ListItem key={index}>
+                      <Link
+                        key={index}
+                        url={menuItem.link}
+                        className={this.state.active === menuItem.title ? activeElementClass : {}}
+                        onClick={this.handleClick.bind(this, menuItem)}
+                      >
+                        {menuItem.title}
+                      </Link>
+                    </ListItem>
+                  );
+                }) }
               </List>
             </Flex>
           </Content>

@@ -173,6 +173,11 @@ p {
   }
 }
 
+::selection {
+  color: $white;
+  background: $accent;
+}
+
 
 /* HTML, BODY */
 

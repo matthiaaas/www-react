@@ -1,8 +1,11 @@
-import React, { Component} from "react";
+import React, { Component, Fragment } from "react";
 
 import "../../assets/css/pages/landingpage.scss";
 
 import SEO from "../../components/SEO";
+import Navbar from "../../components/areas/Navbar";
+import Footer from "../../components/areas/Footer";
+
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
@@ -11,13 +14,17 @@ import Contact from "../../components/areas/Contact";
 class LandingPage extends Component {
   render() {
     return (
-      <main id="home">
-        <SEO></SEO>
-        <Hero></Hero>
-        <About></About>
-        <Projects></Projects>
-        <Contact></Contact>
-      </main>
+      <Fragment>
+        <Navbar />
+        <main id="home">
+          <SEO />
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </Fragment>
     );
   }
 }

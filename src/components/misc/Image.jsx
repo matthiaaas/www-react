@@ -9,7 +9,7 @@ class Image extends Component {
         { this.props.url ?
         <Link url={this.props.url} className={this.props.className}>
           <img src={this.props.src} alt={this.props.alt}></img>
-        </Link> : <img src={this.props.src} alt={this.props.alt}></img>
+        </Link> : <img src={this.props.src} alt={this.props.alt} ref={this.props.ref}></img>
         }
       </Fragment>
     );

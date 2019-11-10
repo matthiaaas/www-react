@@ -8,6 +8,11 @@ import Link from "../../components/misc/Link";
 
 import linksData from "../../data/links.js";
 
+const redirectItems = [
+  { title: "hi@matthias.works", url: linksData.email },
+  { title: "@teaxofficial", url: linksData.twitter }
+];
+
 class Contact extends Component {
   render() {
     return (
@@ -20,7 +25,7 @@ class Contact extends Component {
               content={
                 <Fragment>
                   <Link url={linksData.email}>hi@matthias.works</Link>
-                  &#x20;-&#x20;
+                  &nbsp;-&nbsp;
                   <Link url={linksData.twitter}>@teaxofficial</Link>
                 </Fragment>
               }

@@ -41,6 +41,11 @@ class SEO extends Component {
             content: description
           },
           {
+            name: "keywords",
+            content: "matthias.works, matthias, halfmann, web, design, ui, ux, frontend, development, freelancer, webdesigner, website"
+          },
+          
+          {
             name: "og:title",
             content: title
           },
@@ -63,6 +68,27 @@ class SEO extends Component {
           {
             name: "og:locale",
             content: "de_DE"
+          },
+
+          {
+            name: "twitter:title",
+            content: title
+          },
+          {
+            name: "twitter:site_name",
+            content: title
+          },
+          {
+            name: "twitter:description",
+            content: description
+          },
+          {
+            name: "twitter:image",
+            content: preview
+          },
+          {
+            name: "twitter:url",
+            content: window.location.href
           }
         ]}
 

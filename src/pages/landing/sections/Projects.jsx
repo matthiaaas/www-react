@@ -9,6 +9,7 @@ import Button from "../../../components/misc/Button";
 import Image from "../../../components/misc/Image";
 
 import projectsData from "../../../data/projects.js";
+import linksData from "../../../data/links.js";
 
 class Projects extends Component {
   render() {
@@ -58,7 +59,7 @@ class Projects extends Component {
               </Flex>
             </div>
             <div className="go">
-              <Button url="#">zum portfolio</Button>
+              <Button url={linksData.behance}>zum portfolio</Button>
             </div>
           </Content>
         </Container>
