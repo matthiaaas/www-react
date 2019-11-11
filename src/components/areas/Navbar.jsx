@@ -28,6 +28,7 @@ class Navbar extends Component {
 
     this.state = {
       navOpened: false,
+      onMobile: false,
       active: window.location.pathname === settingsData.basename ? menuItems[0].title : ""
     }
 
@@ -56,7 +57,8 @@ class Navbar extends Component {
 
   openNav() {
     this.setState({
-      navOpened: true
+      navOpened: true,
+      onMobile: true
     });
   }
 
@@ -88,7 +90,7 @@ class Navbar extends Component {
             <Flex aligncenter spacebetween>
               { !this.state.navOpened && <Menu className="mobile m-open" onClick={this.openNav} /> }
               { this.state.navOpened && <X className="mobile m-close" onClick={this.closeNav} /> }
-              <List className="navigation" style={this.state.navOpened ? this.navStyle.opened : {}}>
+              <List className={this.state.onMobile ? "navigation on-mobile" : "navigation"} style={this.state.navOpened ? this.navStyle.opened : {}}>
                 { menuItems.map((menuItem, index) => {
                   return (
                     <ListItem key={index}>

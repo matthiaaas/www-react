@@ -1,6 +1,7 @@
 import React from "react";
 
 import Noeltner from "../pages/projects/Noeltner";
+import Pizziamo from "../pages/projects/Pizziamo";
 
 export default {
   noeltner: {
@@ -19,7 +20,7 @@ export default {
         alt: "preview"
       }
     },
-    content: <Noeltner/>
+    content: <Noeltner />
   },
   
   recipe: {
@@ -61,16 +62,17 @@ export default {
     title: "Pizziamo",
     client: "Pizziamo Bühl",
     skills: [
-      "UI/UX", "Development"
+      "Design", "Development"
     ],
     size: "small",
     url: "/project/pizziamo",
-    intro: "Weil vierzig Zentimeter Durchmesser ausreichen",
+    intro: "Weil Qualität bekanntlich eine Größe hat.",
     image: {
       preview: {
         src: "https://cdn.dribbble.com/users/2049851/screenshots/8071650/media/3a938ceb66985511792546321fb9fa4f.png",
         alt: "preview"
       }
-    }
+    },
+    content: <Pizziamo />
   }
 }

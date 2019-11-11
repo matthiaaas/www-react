@@ -120,7 +120,7 @@ h1, h2, h3 {
 h3 {
   font-family: "Playfair Display";
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.4;
   text-decoration: none;
   color: $dark;
@@ -145,7 +145,7 @@ h4 {
 
   a {
     transition: all ease 0.2s;
-    text-decoration: underline;
+    text-decoration: none;
     
     &:hover {
       color: $dark;
@@ -220,7 +220,12 @@ nav {
         height: 0;
       }
 
+      &.on-mobile li:hover {
+        transform: translateX(6px);
+      }
+
       li {
+        transition: all ease-in-out 0.2s;
         display: inline;
         margin: 0 15px;
 
@@ -244,7 +249,6 @@ nav {
           }
 
           &:hover {
-            transform: translateX(6px);
             color: $dark;
           }
 
@@ -345,7 +349,7 @@ footer {
       }
 
       li {
-        margin: 10px 0;
+        margin: 12px 0;
 
         a {
           cursor: pointer;
@@ -362,6 +366,10 @@ footer {
           }
         }
       }
+    }
+
+    .bar {
+      margin-top: 20px;
     }
   }
 }

@@ -4,7 +4,21 @@ import Container from "../../../components/layout/Container";
 import Content from "../../../components/layout/Content";
 import Flex, { Con } from "../../../components/layout/Flex";
 
-class TwoColumnArticle extends Component {
+export class SingleColumnArticle extends Component {
+  render() {
+    return (
+      <section className={"grid "+this.props.bg}>
+        <Container>
+          <Content>
+            {this.props.content}
+          </Content>
+        </Container>
+      </section>
+    );
+  }
+}
+
+export class TwoColumnArticle extends Component {
   render() {
     return (
       <section className={"grid "+this.props.bg}>
@@ -25,5 +39,3 @@ class TwoColumnArticle extends Component {
     );
   }
 }
-
-export default TwoColumnArticle;
