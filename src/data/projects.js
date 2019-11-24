@@ -2,22 +2,31 @@ import React from "react";
 
 import Noeltner from "../pages/projects/Noeltner";
 import Pizziamo from "../pages/projects/Pizziamo";
+import FTPClient from "../pages/projects/FTPClient";
 
 export default {
   noeltner: {
     name: "noeltner",
     title: "Goldschmiede Karl Nöltner",
     client: "Goldschmiede Nöltner",
+    demo: {
+      text: "goldschmiede-noeltner.com",
+      url: "https://goldschmiede-noeltner.com"
+    },
     skills: [
       "UI/UX", "Development"
     ],
     size: "medium",
     url: "/project/noeltner",
-    intro: "Die Goldschmiede Nöltner sagt der Schmuckindustrie den Kampf an.",
+    intro: "Die Goldschmiede Nöltner distanziert sich von der Massenindustrie.",
     image: {
       preview: {
-        src: "https://cdn.dribbble.com/users/1043407/screenshots/4209431/generalimage_01.png",
+        src: require("../assets/img/projects/noeltner/preview.png"),
         alt: "preview"
+      },
+      landing: {
+        src: require("../assets/img/projects/noeltner/landing.svg"),
+        alt: "landing page fullscreen"
       }
     },
     content: <Noeltner />
@@ -26,7 +35,10 @@ export default {
   recipe: {
     name: "recipe",
     title: "Recipe App",
-    client: "none",
+    client: "-",
+    demo: {
+      text: "-"
+    },
     skills: [
       "UI/UX"
     ],
@@ -43,24 +55,35 @@ export default {
   ftpclient: {
     name: "ftpclient",
     title: "FTP Client",
-    client: "none",
+    client: "-",
+    demo: {
+      text: "-"
+    },
     skills: [
       "UI/UX"
     ],
     size: "large",
     url: "/project/ftpclient",
-    intro: "Announcing a new era of transfering files through the web",
+    intro: "Ein neuer Anstrich für die vielen veralteten FTP Programme",
     image: {
       preview: {
         src: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/de16d577264959.5c82711c0becd.png",
         alt: "preview"
+      },
+      stats: {
+        src: require("../assets/img/projects/ftpclient/stats@2x.png")
       }
     },
+    content: <FTPClient />
   },
   pizziamo: {
     name: "pizziamo",
     title: "Pizziamo",
     client: "Pizziamo Bühl",
+    demo: {
+      text: "pizziamo-buehl.de",
+      url: "https://pizziamo-buehl.de"
+    },
     skills: [
       "Design", "Development"
     ],

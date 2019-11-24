@@ -28,7 +28,7 @@ class Preview extends Component {
         <Content>
           <ScrollProgress onProgress={this.updateProgress}>
             <div ref={this.previewRef} className="wrapper">
-              <div data-aos="fade-in">
+              <div data-aos="fade-in" data-aos-offset="300">
                 <Image src={this.props.src}></Image>
               </div>
             </div>

@@ -30,7 +30,7 @@ class ProjectPage extends Component {
           <SEO title={"Matthias — "+currProject.title} description={currProject.intro} />
           <Header content={currProject.intro} />
           <Preview src={currProject.image.preview.src} />
-          <Overview client={currProject.client} skills={currProject.skills} />
+          <Overview client={currProject.client} demo={currProject.demo} skills={currProject.skills} />
           { currProject.content }
           <Contact />
         </main>

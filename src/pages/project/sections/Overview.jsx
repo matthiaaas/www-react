@@ -23,6 +23,14 @@ class Overview extends Component {
                 <span className="text">{this.props.client}</span>
               </Con>
               <Con>
+                <h3>Demo</h3>
+                <span className="text">
+                  { this.props.demo.text === "-" ? "-" :
+                    <Link url={this.props.demo.url} className="govisit">{this.props.demo.text}</Link>
+                  }
+                </span>
+              </Con>
+              <Con>
                 <h3>Skills</h3>
                 <ul>
                   { this.props.skills.map((skill, index) => {

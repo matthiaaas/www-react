@@ -14,7 +14,7 @@ class About extends Component {
             <Title
               subline="about"
               headline="Hallo"
-              content="Meine Name ist Matthias, ich bin 15 und ein Webdesigner sowie Frontend-Entwickler aus Deutschland"
+              content="Meine Name ist Matthias, ich bin 15 und Webdesigner sowie Frontend-Entwickler aus Deutschland"
             />
           </Content>
         </Container>
