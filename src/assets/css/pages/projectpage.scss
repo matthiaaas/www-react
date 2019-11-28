@@ -115,6 +115,56 @@ main#project {
     }
   }
 
+  /* NEXT */
+
+  #next {
+    
+
+    .content {
+      position: relative;
+      width: 100%;
+      height: 400px;
+
+      .img-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all ease-in-out 0.4s;
+          object-position: center;
+        }
+      }
+  
+      .text-wrapper {
+        transform: translateX(-20px);
+        transition: all ease-in-out 0.4s;
+        z-index: 2;
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+      }
+
+      &:hover {
+        .img-wrapper img {
+          object-position: bottom;
+        }
+
+        .text-wrapper {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
   section {
     .top {
       margin-top: 15px;
@@ -194,8 +244,18 @@ main#project {
     }
 
     &.image {
+      padding: 100px 0;
+
       .top-wrapper {
-        margin-top: 75px 0;
+        margin-bottom: 75px;
+      }
+
+      @media screen and (max-width: $m2) {
+        .image-wrapper {
+          .container {
+            width: 100%;
+          }
+        }
       }
 
       &.fullscreen {

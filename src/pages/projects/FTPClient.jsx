@@ -37,7 +37,24 @@ class FTPClientProject extends Component {
           content={
             <Image src={projectData.image.stats.src} />
           }
-          fullscreen
+        />
+        <ImageArticle
+          bg="white"
+          top={
+            <Headline>Terminal</Headline>
+          }
+          content={
+            <Image src={projectData.image.terminal.src} />
+          }
+        />
+        <ImageArticle
+          bg="default"
+          top={
+            <Headline>Datei-Manager</Headline>
+          }
+          content={
+            <Image src={projectData.image.filemanager.src} />
+          }
         />
       </Fragment>
     );

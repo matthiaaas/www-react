@@ -6,7 +6,7 @@ import Content from "../../../components/layout/Content";
 class ImageArticle extends Component {
   render() {
     return (
-      <section className={"image " + this.props.bg + (this.props.fullscreen && " fullscreen")}>
+      <section className={"image " + this.props.bg + (this.props.fullscreen ? " fullscreen" : "")}>
         { this.props.top && <div className="top-wrapper">
           <Container>
             <Content>

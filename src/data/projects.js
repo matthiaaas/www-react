@@ -31,7 +31,6 @@ export default {
     },
     content: <Noeltner />
   },
-  
   recipe: {
     name: "recipe",
     title: "Recipe App",
@@ -72,6 +71,12 @@ export default {
       },
       stats: {
         src: require("../assets/img/projects/ftpclient/stats@2x.png")
+      },
+      terminal: {
+        src: require("../assets/img/projects/ftpclient/terminal@2x.png")
+      },
+      filemanager: {
+        src: require("../assets/img/projects/ftpclient/filemanager@2x.png")
       }
     },
     content: <FTPClient />
