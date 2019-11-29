@@ -1,32 +1,36 @@
 import React, { Component } from "react";
 
-import { ChevronLeft } from "react-feather";
-
 import Container from "../../../components/layout/Container";
 import Content from "../../../components/layout/Content";
 
-import Link from "../../../components/misc/Link";
 import Image from "../../../components/misc/Image";
-
-import projectsData from "../../../data/projects.js";
-import Headline from "../../../components/misc/Headline";
 
 class Next extends Component {
   render() {
     return (
       <section id="next">
-        <Link url={this.props.project.url}>
-          <Content>
-            <div className="img-wrapper">
-              <Image src={this.props.project.image.preview.src} alt={this.props.project.image.preview.alt} />
-            </div>
-            {/* <div className="text-wrapper">
-              <Container>
-                <Headline>Nächstes Projekt</Headline>
-              </Container>
-            </div> */}
-          </Content>
-        </Link>
+        <Content>
+          <div className="title">
+            <Container>
+              <h4>nächstes projekt</h4>
+            </Container>
+          </div>
+          <div className="image">
+            <Image
+              url={this.props.project.url}
+              onClick={setTimeout(function() {
+                window.scrollTo(0, 0);
+              }, 2)}
+              src={this.props.project.image.preview.src}
+              alt={this.props.project.image.preview.alt}
+            />
+          </div>
+          {/* <div className="text-wrapper">
+            <Container>
+              <Headline>Nächstes Projekt</Headline>
+            </Container>
+          </div> */}
+        </Content>
       </section>
     );
   }

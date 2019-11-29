@@ -1,0 +1,264 @@
+main#home {
+  /* ABOUT */
+  /* PROJECTS */
+}
+
+main#home #hero {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 720px) {
+  main#home #hero {
+    padding-bottom: 100px;
+  }
+}
+
+main#home #hero .bg {
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: #FFFFFF;
+}
+
+@media screen and (max-width: 720px) {
+  main#home #hero .bg {
+    height: 100%;
+  }
+}
+
+main#home #hero .content {
+  z-index: 1;
+  position: relative;
+}
+
+main#home #hero .content > .flex {
+  margin: -25px;
+}
+
+main#home #hero .content .con {
+  margin: 25px;
+}
+
+main#home #hero .content .con.title {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 1280px) {
+  main#home #hero .content .con.title {
+    padding: 25px 0 15px 0;
+  }
+}
+
+main#home #hero .content .con.title h1 {
+  margin-bottom: 20px;
+}
+
+main#home #hero .content .con.image {
+  display: block;
+}
+
+main#home #hero .content .con.image a {
+  display: block;
+  height: 70vh;
+  width: 100%;
+  min-width: 400px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  main#home #hero .content .con.image a {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main#home #hero .content .con.image a {
+    min-width: 250px;
+    height: 35vh;
+  }
+}
+
+main#home #hero .content .con.image a img {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main#home #hero .content .con.image a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main#home #hero .content .con.image a:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+main#home #about {
+  padding: 100px 0 150px 0;
+}
+
+main#home #about .content {
+  text-align: center;
+}
+
+main#home #about .content h2 {
+  margin-top: 7px;
+}
+
+main#home #about .content p {
+  max-width: 375px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+main#home #projects {
+  position: relative;
+}
+
+main#home #projects .bg {
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: #FFFFFF;
+}
+
+main#home #projects .content {
+  width: 100%;
+  padding: 150px 0;
+  z-index: 1;
+  position: relative;
+}
+
+main#home #projects .content .title h2 {
+  margin-top: 10px;
+  max-width: 400px;
+}
+
+main#home #projects .gallery {
+  width: 100%;
+  margin: -15px;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 720px) {
+  main#home #projects .gallery {
+    margin: -15px 0;
+  }
+}
+
+main#home #projects .gallery .row {
+  margin: 0 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-width: 450px;
+}
+
+@media screen and (max-width: 720px) {
+  main#home #projects .gallery .row {
+    min-width: 250px;
+    margin: 0;
+  }
+}
+
+main#home #projects .gallery .row a {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: block;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+main#home #projects .gallery .row a.large {
+  height: 750px;
+}
+
+@media screen and (max-width: 1440px) {
+  main#home #projects .gallery .row a.large {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main#home #projects .gallery .row a.large {
+    height: 40vh;
+  }
+}
+
+main#home #projects .gallery .row a.medium {
+  height: 450px;
+}
+
+@media screen and (max-width: 720px) {
+  main#home #projects .gallery .row a.medium {
+    height: 40vh;
+  }
+}
+
+main#home #projects .gallery .row a.small {
+  height: 350px;
+}
+
+@media screen and (max-width: 720px) {
+  main#home #projects .gallery .row a.small {
+    height: 40vh;
+  }
+}
+
+main#home #projects .gallery .row a img {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main#home #projects .gallery .row a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main#home #projects .gallery .row a:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+main#home #projects .go {
+  margin-top: 35px;
+  text-align: center;
+}
+/*# sourceMappingURL=landingpage.css.map */

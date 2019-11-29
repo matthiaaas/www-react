@@ -33,7 +33,6 @@ class NoeltnerProject extends Component {
           content={
             <Image src={projectData.image.landing.src} />
           }
-          fullscreen
         />
       </Fragment>
     );

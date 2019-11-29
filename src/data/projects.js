@@ -43,7 +43,7 @@ export default {
     ],
     size: "large",
     url: "/project/recipe",
-    intro: "none",
+    intro: "Tomaten vom Feinsten",
     image: {
       preview: {
         src: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/fe15c973721869.5c128f44c0e59.png",
