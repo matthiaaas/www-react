@@ -99,6 +99,18 @@ export default {
       preview: {
         src: "https://cdn.dribbble.com/users/2049851/screenshots/8071650/media/3a938ceb66985511792546321fb9fa4f.png",
         alt: "preview"
+      },
+      overview: {
+        src: "https://cdn.dribbble.com/users/2049851/screenshots/8071650/media/3a938ceb66985511792546321fb9fa4f.png",
+        alt: "overview"
+      },
+      menucard: {
+        src: require("../assets/img/projects/pizziamo/menucard.jpg"),
+        alt: "menucard"
+      },
+      landing: {
+        src: require("../assets/img/projects/pizziamo/landing.svg"),
+        alt: "landing page fullscreen"
       }
     },
     content: <Pizziamo />

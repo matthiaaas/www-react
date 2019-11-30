@@ -1,9 +1,8 @@
 import React, { Component, Fragment } from "react";
 
 import Paragraph from "./modules/Paragraph";
-import { SingleColumnArticle, TwoColumnArticle } from "./modules/ColumnArticle";
+import { TwoColumnArticle } from "./modules/ColumnArticle";
 import ImageArticle from "./modules/ImageArticle";
-import Grid, { GridItem } from "./modules/Grid";
 
 import Headline from "../../components/misc/Headline";
 import Image from "../../components/misc/Image";

@@ -24,9 +24,17 @@ class Contact extends Component {
               headline="Reden wir über Ihr Projekt"
               content={
                 <Fragment>
-                  <Link url={linksData.email}>hi@matthias.works</Link>
-                  &nbsp;-&nbsp;
-                  <Link url={linksData.twitter}>@teaxofficial</Link>
+                  { redirectItems.map((redirectItem, index) => {
+                    return (
+                      <Fragment>
+                        <Link url={redirectItem.url} key={index}>{redirectItem.title}</Link>
+                        {index <= redirectItems.length - 2 ?
+                          <Fragment>
+                            &nbsp;—&nbsp;
+                          </Fragment> : ""}
+                      </Fragment>
+                    );
+                  }) }
                 </Fragment>
               }
               url={linksData.email}

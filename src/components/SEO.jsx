@@ -92,11 +92,11 @@ class SEO extends Component {
           }
         ]}
 
-        script={[
-          {
-            src: "https://unpkg.com/aos@next/dist/aos.js"
-          }
-        ]}
+        // script={[
+        //   {
+        //     src: "https://unpkg.com/aos@next/dist/aos.js"
+        //   }
+        // ]}
       />
     );
   }

@@ -25,7 +25,7 @@ class Grid extends Component {
               </div>
             }
             <Flex>
-              {this.props.children}
+              {this.props.content}
             </Flex>
           </Content>
         </Container>
