@@ -97,7 +97,7 @@ export default {
     intro: "Weil Qualität bekanntlich eine Größe hat.",
     image: {
       preview: {
-        src: "https://cdn.dribbble.com/users/2049851/screenshots/8071650/media/3a938ceb66985511792546321fb9fa4f.png",
+        src: require("../assets/img/projects/pizziamo/preview.png"),
         alt: "preview"
       },
       overview: {

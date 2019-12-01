@@ -32,6 +32,10 @@ main#project {
 
         >div {
           width: 100%;
+
+          @media screen and (max-width: $m2) {
+            height: 100%;
+          }
         }
 
         img {
