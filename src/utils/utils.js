@@ -14,9 +14,5 @@ export function getElementOffset(element) {
 export function hasHash(url) {
   let hasHash = url.split("#")[1];
 
-  if (hasHash) {
-    return true;
-  } else {
-    return false;
-  }
+  return hasHash ? true : false;
 }
