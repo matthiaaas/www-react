@@ -3,6 +3,7 @@ import React from "react";
 import Noeltner from "../pages/projects/Noeltner";
 import Pizziamo from "../pages/projects/Pizziamo";
 import FTPClient from "../pages/projects/FTPClient";
+import Recipe from "../pages/projects/Recipe";
 
 export default {
   noeltner: {
@@ -27,6 +28,10 @@ export default {
       landing: {
         src: require("../assets/img/projects/noeltner/landing.svg"),
         alt: "landing page fullscreen"
+      },
+      profile: {
+        src: require("../assets/img/projects/noeltner/profile.gif"),
+        alt: "profile interaction"
       }
     },
     content: <Noeltner />
@@ -50,6 +55,7 @@ export default {
         alt: "preview"
       }
     },
+    content: <Recipe />
   },
   ftpclient: {
     name: "ftpclient",
@@ -94,7 +100,7 @@ export default {
     ],
     size: "small",
     url: "/project/pizziamo",
-    intro: "Weil Qualität bekanntlich eine Größe hat.",
+    intro: "40cm Ø",
     image: {
       preview: {
         src: require("../assets/img/projects/pizziamo/preview.png"),
@@ -109,8 +115,12 @@ export default {
         alt: "menucard"
       },
       landing: {
-        src: require("../assets/img/projects/pizziamo/landing.svg"),
+        src: require("../assets/img/projects/pizziamo/landing.png"),
         alt: "landing page fullscreen"
+      },
+      menu: {
+        src: require("../assets/img/projects/pizziamo/menu.png"),
+        alt: "menu page fullscreen"
       }
     },
     content: <Pizziamo />

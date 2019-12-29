@@ -41,7 +41,9 @@ class PizziamoProject extends Component {
           top={
             <Fragment>
               <Headline data-aos="fade-up">Typeface und Layout</Headline>
-              <Paragraph top data-aos="fade-up" data-aos-delay="50" style={{maxWidth: "600px"}}>Dennoch habe ich auf eine neue Schrift und verschiedene Farben zurückgegriffen, um die Webseite geordneter und übersichtlicher gestalten zu können.</Paragraph>
+              <Paragraph top data-aos="fade-up" data-aos-delay="50" style={{maxWidth: "600px"}}>
+                Dennoch habe ich mich für eine neue Schrift und verschiedene Farben entschieden, um die Webseite geordneter und übersichtlicher gestalten zu können.
+              </Paragraph>
             </Fragment>
           }
           content={
@@ -68,6 +70,15 @@ class PizziamoProject extends Component {
           }
           content={
             <Image src={projectData.image.landing.src} />
+          }
+        />
+        <ImageArticle
+          bg="default"
+          top={
+            <Headline>Menükarte</Headline>
+          }
+          content={
+            <Image src={projectData.image.menu.src} />
           }
         />
       </Fragment>

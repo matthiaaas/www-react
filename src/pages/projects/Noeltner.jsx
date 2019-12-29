@@ -29,9 +29,9 @@ class NoeltnerProject extends Component {
           }
         />
         <ImageArticle
-          bg="default"
+          bg="white"
           content={
-            <Image src={projectData.image.landing.src} />
+            <Image src={projectData.image.profile.src} />
           }
         />
       </Fragment>
