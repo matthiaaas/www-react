@@ -15,9 +15,9 @@ import settingsData from "../../data/settings.js";
 
 const menuItems = [
   { title: "Home", link: "/" },
-  { title: "About", link: settingsData.basename+"#about" },
-  { title: "Projects", link: settingsData.basename+"#projects" },
-  { title: "Contact", link: settingsData.basename+"#contact" }
+  { title: "About", link: settingsData.basename+"/#about" },
+  { title: "Projects", link: settingsData.basename+"/#projects" },
+  { title: "Contact", link: settingsData.basename+"/#contact" }
 ];
 
 class Navbar extends Component {
