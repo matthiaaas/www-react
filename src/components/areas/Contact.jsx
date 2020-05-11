@@ -10,7 +10,7 @@ import linksData from "../../data/links.js";
 
 const redirectItems = [
   { title: "hi@matthias.works", url: linksData.email },
-  { title: "@teaxofficial", url: linksData.twitter }
+  { title: "@matthiashalfmnn", url: linksData.twitter }
 ];
 
 class Contact extends Component {
